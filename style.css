@@ -88,9 +88,8 @@ button:hover {
     transition: 150ms ease;
 }
 
-button:active, button:focus {
+button:active {
     scale: 0.93;
-    box-shadow: 0px 0px 10px 2px var(--NeonGreen);
 }
 
 /* MEDIA Q */
