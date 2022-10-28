@@ -42,10 +42,8 @@ main {
     opacity: 0;
     height: 3px;
     width: 33rem;
-    /* 33rem; */
     border-radius: 1rem;
     background-color: lightslategray;
-    /* transition: width 1.5s ease; */
 }
 
 .countdown-none {
@@ -127,3 +125,4 @@ button:active {
     button {
         box-shadow: none;
     }
+}
