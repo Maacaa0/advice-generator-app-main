@@ -25,8 +25,6 @@
                 ],
                 { duration: 1400, iterations: 1 }
               );
-                console.log(timerWidth)
         }
 
 btn.addEventListener("click", getAdvice);
-  
