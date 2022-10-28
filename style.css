@@ -96,6 +96,7 @@ button:hover {
 
 button:active {
     scale: 0.95;
+    box-shadow: none;
 }
 
 /* MEDIA Q */
