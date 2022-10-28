@@ -3,6 +3,8 @@
     const adviceNum = document.getElementById("advice_num");
     const countDown = document.querySelector(".countdown");
 
+    AOS.init();
+
     function getAdvice() {
         fetch("https://api.adviceslip.com/advice")
         .then(res => res.json())
