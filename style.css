@@ -34,7 +34,6 @@ main {
     border-radius: 0.9rem;
     width: 33.7rem;
     height: auto;
-    /* 20.7rem;  */
     box-shadow: 0px 32px 85px -47px rgba(0,0,0,0.75);
 }
 
@@ -92,9 +91,9 @@ button:hover {
     transition: 150ms ease;
 }
 
-button:active {
-    scale: 0.95;
-    box-shadow: none;
+button:active, button:focus {
+    scale: 0.93;
+    box-shadow: 0px 0px 10px 2px var(--NeonGreen);
 }
 
 /* MEDIA Q */
