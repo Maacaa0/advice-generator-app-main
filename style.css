@@ -20,7 +20,8 @@ body {
     min-height: 100vh;
     background-color: var(--DarkBlue);
     font-family: "Manrope", sans-serif;
-    overflow: hidden;
+
+    margin: 0;
 }
 
 main {
@@ -46,10 +47,6 @@ main {
     background-color: lightslategray;
 }
 
-.countdown-none {
-    width: 0;
-    display: block;
-}
 
 h1 {
     margin-top: 3.2rem;
@@ -71,7 +68,6 @@ h1 {
 }
 .advice::after {
     content: "”";
-
 }
 
 button {
@@ -118,11 +114,5 @@ button:active, button:focus {
     }
     .countdown {
         width: 20rem;
-    }
-}
-
-@media (hover: none) {
-    button {
-        box-shadow: none;
     }
 }
