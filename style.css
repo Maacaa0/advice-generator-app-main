@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--DarkBlue);
+    font-family: "Manrope", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 0.9rem;
+    width: 33.7rem;
+    height: auto;
+    /* 20.7rem;  */
+    box-shadow: 0px 32px 85px -47px rgba(0,0,0,0.75);
+}
+
+.countdown {
+    opacity: 0;
+    height: 3px;
+    width: 33rem;
+    /* 33rem; */
+    border-radius: 1rem;
+    background-color: lightslategray;
+    /* transition: width 1.5s ease; */
+}
+
+.countdown-none {
+    width: 0;
+    display: block;
+}
+
+h1 {
+    margin-top: 3.2rem;
+    color: var(--NeonGreen);
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 4.3px;
+}
+
+.advice {
+    font-size: 1rem;
+    color: var(--LightCyan);
+    padding: 0rem 2.4rem;
+    font-size: 1.7rem;
+}
+
+.advice::before {
+    content: "“";
+}
+.advice::after {
+    content: "”";
+
+}
+
+button {
+    width: 4rem;
+    aspect-ratio: 1/1;
+    background:url(images/icon-dice.svg)center center no-repeat var(--NeonGreen);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    position: relative;
+    top: 1.8rem;
+    
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* MEDIA Q */
+
+@media (max-width:550px) {
+
+    main {
+        width: 21.4rem;
+    }
+
+    h1 {
+        margin-top: 2.5rem;
+        font-size: .7rem;
+        letter-spacing: 3.3px;
+    }
+
+    .advice {
+        padding: 0 1.2rem;
+        font-size: 1.4rem;
+        letter-spacing: 0.3px;
+    }
+    .countdown {
+        width: 20rem;
+    }
+}
