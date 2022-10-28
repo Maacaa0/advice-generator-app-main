@@ -72,7 +72,7 @@ h1 {
 
 button {
     width: 4rem;
-    aspect-ratio: 1/1;
+    height: 4rem;
     background:url(images/icon-dice.svg)center center no-repeat var(--NeonGreen);
     border: none;
     outline: none;
