@@ -122,3 +122,8 @@ button:active {
         width: 20rem;
     }
 }
+
+@media (hover: none) {
+    button {
+        box-shadow: none;
+    }
